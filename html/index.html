@@ -4,36 +4,47 @@
     <head>
         <!-- Verweise auf externe CSS-Datei und JS-Datei -->
         <meta charset="UTF-8"/>
-        <link ref="stylesheet" type="text/css" href="../css/style.css">
-        <title>Meine erste Website</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Responsive Homepage</title>
     </head>
 
     <body>
-        
-        <div class="main-header">
+            <header>
+                <h1>CMN1 Projekt HTML Seite</h1>
+            </header>
 
-        </div>
+            <nav>
+                <a href="../html/HTML_table.html">Tabelle</a>
+                <a href="#">Formular</a>
+                <a href="#">Infos</a>
+            </nav>
 
-        <div class="navbar">
-            <a href="../html/HTML_table.html">Tabelle</a><br/>
-            <a href="#">Formular</a><br/>
-            <a href="#">Infos</a>
-        </div>
+            <main>
+                <!-- Hier kommt Ihr Inhalt hin -->
+                <h2>Nils Bestehorn</h2>
+                <div class="image-container">
+                    <img class="Picture_NB" src="../img/NB_Profil.png" alt="Foto von Nils Bestehorn"/>
+                </div>
+                <h3>Kontakt</h3>
+                <adress>
+                    <dl>
+                        <ul></ul>
+                        <dt>Mob.</dt>
+                        <dd><a href="tel:+49-157-88990260">0157 88990260</a></dd></br>
+                        <dt>E-Mail.</dt>
+                        <dd><a href="mailto:nils.bestehorn@student.hs-mr.de">nils.bestehorn@student.hs-rm.de</a></dd>
+                    </dl>
+                </adress>
+            </main>
 
-        <div class="center-body">
-            <!-- Hier kommt Ihr Inhalt hin -->
-            Text1<br/>
-            Viele Grüße<br/>
-            <img src="../img/cm1.png" alt="Foto"/>
-        </div>
-
-        <div class="right-side">
-
-        </div>
-
-        <div class="legal-content">
-            (c) 2023 - Nils Bestehorn | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
-        </div>
+            <footer>
+                &copy; 2023 by Nils Bestehorn | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+            </footer>
 
     </body>
 

@@ -1,19 +1,58 @@
-.main-header{
+body{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin: 0 auto;
+    max-width: 60em;
+
     display: flex;
+    flex-flow: row wrap;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.navbar{
-    display: flex;
+a{
+    text-decoration: none;
+    color: rgba(235, 51, 51, 0.911);
 }
 
-.center-body{
+header{
     display: flex;
+    flex-flow: row wrap;
 }
 
-.right-side{
-    display: flex;
+header * {
+    flex: 1 1 0%;
 }
 
-.legal-content{
-    display: flex;
+header nav {
+    flex: 1 1 100%;
+}
+
+nav ul{
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+nav{
+    flex: 1 100%;
+}
+
+main{
+    flex: 1 100%;
+    
+}
+
+footer{
+    flex: 1 100%;
+    background-color: lightcyan;
+}
+
+.Picture_NB{
+    width: 100%;
+}
+
+.image-container{
+    background-color: whitesmoke;
+    padding: 2%;
 }
