@@ -43,3 +43,6 @@ https://www.youtube.com/watch?v=dOgFkZiVC8w
 
 CSS Zero to Hero
 https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=18875s
+
+Color Schemes
+https://hookagency.com/blog/website-color-schemes-2020/

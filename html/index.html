@@ -2,7 +2,6 @@
 <html lang="de">
 
     <head>
-        <!-- Verweise auf externe CSS-Datei und JS-Datei -->
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,36 +13,43 @@
     </head>
 
     <body>
-            <header>
+            <header id="inhalte-zentriert">
                 <h1>CMN1 Projekt HTML Seite</h1>
             </header>
 
             <nav>
-                <a href="../html/HTML_table.html">Tabelle</a>
-                <a href="#">Formular</a>
-                <a href="#">Infos</a>
+                <dif class="navBoxactive" id="inhalte-zentriert">
+                    <a href="../html/index.html">Infos zur Person</a>
+                </dif>
+                <dif class="navBox" id="inhalte-zentriert">
+                    <a href="../html/HTML_table.html">Stundenplan 6.Semester</a>
+                </dif>
+                <dif class="navBox" id="inhalte-zentriert">
+                    <a href="#">Formular</a>
+                </dif>
             </nav>
 
             <main>
-                <!-- Hier kommt Ihr Inhalt hin -->
-                <h2>Nils Bestehorn</h2>
+                <h1>Nils Bestehorn</h1>
                 <div class="image-container">
                     <img class="Picture_NB" src="../img/NB_Profil.png" alt="Foto von Nils Bestehorn"/>
                 </div>
                 <h3>Kontakt</h3>
                 <adress>
                     <dl>
-                        <ul></ul>
-                        <dt>Mob.</dt>
+                        <dt><b>Adresse:</b></dt>
+                        <dd>Oestricher Weg 33</dd>
+                        <dd>60529 Frankfurt am Main</dd></br>
+                        <dt><b>Mob.:</b></dt>
                         <dd><a href="tel:+49-157-88990260">0157 88990260</a></dd></br>
-                        <dt>E-Mail.</dt>
+                        <dt><b>E-Mail:</b></dt>
                         <dd><a href="mailto:nils.bestehorn@student.hs-mr.de">nils.bestehorn@student.hs-rm.de</a></dd>
                     </dl>
                 </adress>
             </main>
 
-            <footer>
-                &copy; 2023 by Nils Bestehorn | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
+            <footer id="inhalte-zentriert">
+                &copy; 2023 by Nils Bestehorn &ensp;|&ensp; <a href="#">Impressum</a> &ensp;|&ensp; <a href="#">Datenschutz</a>
             </footer>
 
     </body>
