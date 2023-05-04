@@ -1,46 +1,207 @@
 <!DOCTYPE html>
 <html lang="de">
+
     <head>
         <meta charset="UTF-8"/>
-        <title>Mein erster Tab</title>
-        <!-- Verweise auf externe CSS-Datei und JS-Datei --> 
-        <style>
-            table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-            }
-
-            td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-            }
-            
-            tr:nth-child(even) {
-            background-color: #dddddd;
-            }
-        </style>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Stundenplan</title>
     </head>
     
     <body>
+        <header id="inhalte-zentriert">
+            <h1>CMN1 Projekt HTML Seite</h1>
+        </header>
 
-        <h1>Mein erster Hyperlink auf die Tabellen seite</h1><br/>
-        <table style="width:100%">
-            <tr>
-                <th>Land</th>
-                <th>Stadt</th>
-            </tr>
-            <tr>
-                <td>Deutschland</td>
-                <td>England</td>
-            </tr>
-            <tr>
-                <td>Berlin</td>
-                <td>London</td>
-            </tr>
-        </table>
-    
+        <nav>
+            <dif class="navBox" id="inhalte-zentriert">
+                <a href="../html/index.html">Infos zur Person</a>
+            </dif>
+            <dif class="navBoxactive" id="inhalte-zentriert">
+                <a href="../html/HTML_table.html">Stundenplan</a>
+            </dif>
+            <dif class="navBox" id="inhalte-zentriert">
+                <a href="#">Formular</a>
+            </dif>
+        </nav>
+
+        <main>
+            <h1>Stundenplan 6. Semester iING</h1></br>
+
+            <table >
+                <thead>
+                    <tr>
+                        <th colspan="7">Studiengang Mechatronik</br>
+                            6. Semester, Sommersemester 2023
+                        </th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>Montag</th>
+                        <th>Dienstag</th>
+                        <th>Mittwoch</th>
+                        <th>Donnerstag</th>
+                        <th>Freitag</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Time -->
+                        <td>08:15</td>
+                        <!-- Mo -->
+                        <td rowspan="2">VL Produktionstechnik</td>
+                        <!-- Di -->
+                        <td rowspan="2">PR Computer & Networking</td>
+                        <!-- Mi -->
+                        <td rowspan="7">VL Sensorik & Bussysteme</td>
+                        <!-- Do -->
+                        <td></td>
+                        <!-- Fr -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>09:00</td>
+                        <!-- Do -->
+                        <td rowspan="3">VL Computer & Networking</td>
+                        <!-- Fr -->
+                        <td rowspan="3">VL CAM</td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>09:45</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Di -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>10:00</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Di -->
+                        <td rowspan="4">VL Werkzeugmaschinen</td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>10:30</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                        <!-- Fr -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>10:45</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                        <!-- Fr -->
+                        <td rowspan="5">PR CAM</td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>11:30</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>11:45</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Di -->
+                        <td rowspan="3">PR Produktionstechnik</td>
+                        <!-- Mi -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>12:30</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Mi -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>13:15</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Mi -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>13:30</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Di -->
+                        <td></td>
+                        <!-- Mi -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                        <!-- Fr -->
+                        <td rowspan="2">ÜB CAM</td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>14:15</td>
+                        <!-- Mo -->
+                        <td rowspan="2">VL Prozesstechnik</td>
+                        <!-- Di -->
+                        <td></td>
+                        <!-- Mi -->
+                        <td rowspan="2">VL Qualitätsmanagement</td>
+                        <!-- Do -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>15:00</td>
+                        <!-- Di -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                        <!-- Fr -->
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- Time -->
+                        <td>15:45</td>
+                        <!-- Mo -->
+                        <td></td>
+                        <!-- Di -->
+                        <td></td>
+                        <!-- Mi -->
+                        <td></td>
+                        <!-- Do -->
+                        <td></td>
+                        <!-- Fr -->
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+
         <footer id="inhalte-zentriert">
             &copy; 2023 by Nils Bestehorn &ensp;|&ensp; <a href="#">Impressum</a> &ensp;|&ensp; <a href="#">Datenschutz</a>
         </footer>
