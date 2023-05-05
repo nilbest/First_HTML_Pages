@@ -1,7 +1,8 @@
 const textModal = document.getElementById("Text-Modal"),
       btnTextModal = document.getElementById('btnText'),
       btnOkText = document.getElementById('btnOkText'),
-      closeText = document.getElementById('closeText');
+      closeText = document.getElementById('closeText'),
+      outText = document.getElementById('outText');
 
 const helpModal = document.getElementById("Help-Modal"),
       btnHelpModal = document.getElementById('btnHelp'),
@@ -22,7 +23,9 @@ function closeHelpModal(){
    helpModal.style.display="none";
 }
 
-
+function addTextToModal(newText){
+   outText.innerHTML = newText;
+}
 
 
 /*Event Handler Text Modal*/
@@ -30,6 +33,7 @@ form.addEventListener('submit', function(event){
    event.preventDefault();
    let newText=document.getElementById('NewText').value;
    console.log(newText);
+   addTextToModal(newText);
    textModal.style.display="flex";
 })
 
