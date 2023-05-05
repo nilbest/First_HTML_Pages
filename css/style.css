@@ -1,4 +1,4 @@
-#inhalte-zentriert {
+.inhalte-zentriert{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +46,10 @@ nav a{
     height: 4em;
     width: 100%;
     transition: 0.2s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navBox:hover{
@@ -57,6 +61,10 @@ nav a{
     background-color: #ffb766;
     height: 4em;
     width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -102,7 +110,6 @@ footer a:hover{
 
 
 /*Tabelle*/
-
 table, th, td{
     border: 1px solid;
     text-align: center;
@@ -116,8 +123,6 @@ table, th, td{
     width:15em;
 }
 
-
-
 table {
     /*width: 100%;*/
     border-collapse: collapse;
@@ -126,14 +131,82 @@ table {
     overflow: scroll;
 }
 
-th{
 
+/*Modal Class*/
+.modal-container{
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
 
-td{
-
+.modal-content{
+    width: 40%;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    overflow: none;
+    margin:auto;
+    /*display:grid;
+    grid-template-rows: 5% 90% 10%;
+    grid-template-areas: "header"
+                        "body"
+                        "footer";*/
 }
 
-/*tr:nth-child (){
+.modal-header{
+    padding: 1.5em;
+    background-color: #5cb85c;
+}
 
-}*/
+.modal-body{
+    padding: 2em;
+}
+
+.modal-footer{
+    padding: 1em;
+    background-color: #c2edda;
+}
+
+/*Text Modal ID*/
+#Text-Modal{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#Help-Modal{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+/*Button*/
+.open:hover{
+        cursor: pointer;
+}
+
+/*Close Button Class*/
+.modal-header .close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+}
+
+.modal-header .close:hover{
+    cursor: pointer;
+}

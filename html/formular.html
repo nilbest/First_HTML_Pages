@@ -9,36 +9,76 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
         <title>Form</title>
     </head>
 
     <body>
-        <header id="inhalte-zentriert">
+        <header class="inhalte-zentriert">
             <h1>CMN1 Projekt HTML Seite</h1>
         </header>
 
         <nav>
-            <dif class="navBox" id="inhalte-zentriert">
+            <dif class="navBox">
                 <a href="../html/index.html">Infos zur Person</a>
             </dif>
-            <dif class="navBox" id="inhalte-zentriert">
+            <dif class="navBox">
                 <a href="../html/HTML_table.html">Stundenplan</a>
             </dif>
-            <dif class="navBoxactive" id="inhalte-zentriert">
+            <dif class="navBoxactive">
                 <a href="../html/formular.html">Formular</a>
             </dif>
         </nav>
 
         <main>
             <h1>Einfaches Formular</h1><br>
-            
+            <form id="form">
+                <label for="NewText">Geben Sie einen beliebigen Text ein.</label><br>
+                <input type="text" name="NewText" id="NewText" placeholder="Enter Text" required>
+                <!--<input type="submit" value="Textausgabe">-->
+                <button id="btnText" type="submit" class="open">Textausgabe</button><br>
+                <button type="button" id="btnHelp" class="open">Hinweis</button>
+                <button type="reset" class="open">Reset</button>
+            </form>
+
         </main>
 
         
-        <footer id="inhalte-zentriert">
+        <footer class="inhalte-zentriert">
             &copy; 2023 by Nils Bestehorn &ensp;|&ensp; <a href="#">Impressum</a> &ensp;|&ensp; <a href="#">Datenschutz</a>
         </footer>
 
+        <div id="Text-Modal" class="modal-container">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div id="closeText" class="close">+</div>
+                </div>
+                <div class="modal-body">
+                <h2>You wrote:</h2>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnOkText">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Help-Modal" class="modal-container">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div id="closeHelp" class="close">+</div>
+                </div>
+                <div class="modal-body">
+                    <h2>Hinweis</h2>
+                    Ohne Eingabe ist eine Textausgabe nicht möglich!
+                </div>
+                <div class="modal-footer">
+                    <button id="btnOkHelp">OK</button>
+                </div>
+            </div>
+        </div>
+
     </body>
+
+    <script src="../js/main.js"></script>
 
 </html>
