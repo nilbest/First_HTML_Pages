@@ -104,7 +104,6 @@ footer a:hover{
 /*Tabelle*/
 
 table, th, td{
-    width:100%;
     border: 1px solid;
     text-align: center;
 }
@@ -120,9 +119,11 @@ table, th, td{
 
 
 table {
-    width: 100%;
+    /*width: 100%;*/
     border-collapse: collapse;
-    font-size: 0.7rem;
+    font-size: 1rem;
+    table-layout: fixed;
+    overflow: scroll;
 }
 
 th{
