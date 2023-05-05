@@ -104,20 +104,35 @@ footer a:hover{
 /*Tabelle*/
 
 table, th, td{
-    border: 2px solid;
+    width:100%;
+    border: 1px solid;
     text-align: center;
-    padding: 1%;
 }
+
+.RowTime{
+    width:2em;
+}
+
+.RowDays{
+    width:15em;
+}
+
+
 
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 0.7rem;
 }
 
 th{
-    
+
 }
 
 td{
 
 }
+
+/*tr:nth-child (){
+
+}*/
