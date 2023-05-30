@@ -4,15 +4,52 @@
     justify-content: center;
 }
 
+html{
+    height: 100%
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     color: black;
-    margin: 0.5% 2%;
+    margin: 20px 40px;
+    min-height: 100%;
     display: grid;
-    grid-template-columns: 20% 80%;
+    gap: 1em;
+    grid-template-columns: 12.5em 3fr;
+    grid-template-rows: 5em 1fr 1em;
     grid-template-areas:    "header header"
                             "sidebar main"
                             "footer footer";
+}
+
+@media only screen and (max-width: 972px){
+    body{
+        grid-template-columns: 100%;
+        grid-template-rows: 5em 12.5em 1fr 1em;
+        grid-template-areas:    "header"
+                                "sidebar"
+                                "main"
+                                "footer";
+    }
+}
+
+@media only screen and (max-width: 495px){
+    body{
+        grid-template-columns: 100%;
+        grid-template-rows: 5em 12.5em 1fr 3em;
+        grid-template-areas:    "header"
+                                "sidebar"
+                                "main"
+                                "footer";
+    }
+    header{
+        text-align: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
 }
 
 /*Body Elements*/
@@ -31,10 +68,6 @@ nav{
     align-items: start;
     justify-content: start;
     gap: 1em; 
-    padding-left: 0.5em;
-    padding-right: 1em;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
 }
 
 nav a{
@@ -67,24 +100,17 @@ nav a{
 }
 
 
-
 main{
     grid-area: main;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    display: flex;
-    flex-flow: column;
-    align-items: start;
-    justify-content: start;
 }
-
 
 
 footer{
     grid-area: footer;
-    margin-top: 1em;
+    align-content: middle;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
 }
 
 footer a{
@@ -99,11 +125,20 @@ footer a:hover{
 
 
 /*Own styles*/
-.Picture_NB{
-    width: 50%;
+.image-container{
+    grid-area: left;
+}
+
+.image-container img{
+    min-width: 10%;
+    max-width: 30%;
+    height: auto;
 }
 
 
+#Infos-Nils{
+    grid-area: right;
+}
 
 /*Tabelle*/
 table, th, td{
@@ -124,37 +159,47 @@ table {
     border-collapse: collapse;
     font-size: 1rem;
     table-layout: fixed;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
+.x-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .y-center {
+    flex: 1;
+  }
+  
+  .x-right {
+    justify-content: flex-end;
+  }
+  
+  .y-bottom {
+    align-self: flex-end;
+  }
 
 /*Modal Class*/
 .modal-container{
     background: rgba(0,0,0,0.7);
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
+    
 }
 
 .modal-content{
-    width: 40%;
+    width: 19em;
     background-color: white;
     text-align: center;
     border: 1px solid black;
     position: relative;
     overflow: none;
     margin:auto;
-    /*display:grid;
-    grid-template-rows: 5% 90% 10%;
-    grid-template-areas: "header"
-                        "body"
-                        "footer";*/
 }
 
 .modal-header{
@@ -174,21 +219,17 @@ table {
 
 /*Text Modal ID*/
 #Text-Modal{
-    width: 100%;
-    height: 100%;
     display: none;
 }
 
 #Help-Modal{
-    width: 100%;
-    height: 100%;
     display: none;
-    bottom: 0;
 }
 
 #Help-Modal .modal-content{
     position: absolute;
-    left: 30%;
+    bottom:0;
+    right:0;
 }
 
 
@@ -212,4 +253,15 @@ table {
 
 .modal-footer .close:hover{
     cursor: pointer;
+}
+
+.form{
+    background-color: #5cb85c;
+    padding: 5px;
+    width: 20em;
+    text-align: center;
+}
+
+.maininput{
+    padding:10px;
 }

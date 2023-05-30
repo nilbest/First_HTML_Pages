@@ -31,18 +31,35 @@
         </nav>
 
         <main>
-            <h1>Einfaches Formular</h1><br>
-            <form id="form">
-                <label for="NewText">Geben Sie einen beliebigen Text ein.</label><br><br>
-                <input type="text" name="NewText" id="NewText" placeholder="Enter Text" required>
-                <!--<input type="submit" value="Textausgabe">-->
-                <button id="btnText" type="submit" class="open">Textausgabe</button><br><br>
-                <button type="button" id="btnHelp" class="open">Hinweis</button>
-                <button type="reset" class="open">Reset</button>
-            </form>
+            <h1 class="grid-col-span-3">Einfaches Formular</h1>
 
+            <section name="What does this page do?" class="grid-col-span-3">
+                <h2>Info zu dem Formular</h2>
+                <p>Das Formular ist nur dafür da, um zu zeigen, wie ein Formular aufgebaut sein kann. 
+                    Die Daten werden nicht gespeichert, lediglich wieder in der Konsole ausgegeben.
+                    <br><br>
+                    Theoretisch ist es möglich hier dann eine Anbindung an eine Datenbank zu programmieren, die die Antworten dann aufnimmt.
+                </p>
+            </section>
+
+            <section class="grid-col-span-3">
+                <h3>Teste das Formular</h3>
+                <form id="form" class="form">
+                    
+                    <label for="NewText">Geben Sie einen beliebigen Text ein.</label>
+                    <div class="maininput">
+                        <input type="text" name="NewText" id="NewText" placeholder="Enter Text" required>
+                        <button id="btnText" type="submit" class="open">Textausgabe</button>
+                    </div>
+                    <button type="button" id="btnHelp" class="open">Hinweis</button>
+                    <button type="reset" class="open">Reset</button>
+                </form>
+            </section>
+
+            
         </main>
 
+        
         
         <footer class="inhalte-zentriert">
             &copy; 2023 by Nils Bestehorn &ensp;|&ensp; <a href="#">Impressum</a> &ensp;|&ensp; <a href="#">Datenschutz</a>
@@ -77,6 +94,8 @@
                 </div>
             </div>
         </div>
+
+        
 
     </body>
 

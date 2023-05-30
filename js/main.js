@@ -43,6 +43,7 @@ btnOkText.addEventListener('click', closeTextModal)
 
 
 /*Event Handler Help Modal*/ 
+
 btnHelpModal.addEventListener('click', ()=>{
    helpModal.style.display="flex";
 })
@@ -50,4 +51,6 @@ btnHelpModal.addEventListener('click', ()=>{
 closeHelp.addEventListener('click', closeHelpModal)
 btnOkHelp.addEventListener('click', closeHelpModal)
 
+
+//btnHelpModal.addEventListener('click', ()=>{alert("Ohne Eingabe ist eine Textausgabe nicht möglich!");})
 
