@@ -31,6 +31,11 @@ body{
                                 "main"
                                 "footer";
     }
+    footer{
+        display: flex;
+        flex-direction: row;
+        overflow-y: auto;
+    }
 }
 
 @media only screen and (max-width: 495px){

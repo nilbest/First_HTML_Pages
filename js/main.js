@@ -52,5 +52,5 @@ closeHelp.addEventListener('click', closeHelpModal)
 btnOkHelp.addEventListener('click', closeHelpModal)
 
 
+//Laut Online Texten relativ Unsicher, Empfehlung via HTML Einbingung
 //btnHelpModal.addEventListener('click', ()=>{alert("Ohne Eingabe ist eine Textausgabe nicht möglich!");})
-
