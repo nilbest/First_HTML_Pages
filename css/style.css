@@ -109,6 +109,9 @@ main{
     grid-area: main;
 }
 
+.boldText{
+    font-weight:bold;
+}
 
 footer{
     grid-area: footer;
